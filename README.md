@@ -1,8 +1,6 @@
-# 生物信息 作业11
+# pyTranslate
 
 > PeiwenJi 2021.04.23
-
-[toc]
 
 ## 1. 问题
 
