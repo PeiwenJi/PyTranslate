@@ -18,8 +18,6 @@
 
 分别完成主界面、结果界面的绘制后，保存为pyTranslate.ui和results5.ui文件。
 
-![image](https://user-images.githubusercontent.com/56212670/123984822-8a937080-d9f7-11eb-923e-e0dc57dc48fd.png)
-
 **（2） 将.ui文件转化为.py文件。**
 
 win+R，打开cmd，进入控制台界面。切换到ui文件所在路径，使用pyuic5命令。
@@ -65,8 +63,6 @@ def mainTranslate(self, seq):
 
 注：gencode（标准密码表——根据NCBI Genetic Codes [Standard Code](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=tgencodes#SG1)绘制）
 
-<img src="C:\Users\20181\AppData\Roaming\Typora\typora-user-images\image-20210423102910082.png" alt="image-20210423102910082" style="zoom:50%;" />
-
 **（2） complement(self, s): 返回互补链。**
 
 查询basecomplement字典返回对应的互补链。
@@ -79,8 +75,6 @@ def complement(self, s):
 ```
 
 注：basecomplement（碱基对应表）
-
-<img src="C:\Users\20181\AppData\Roaming\Typora\typora-user-images\image-20210423103509558.png" alt="image-20210423103509558" style="zoom:55%;" />
 
 **（3） popWindow(self): 展示结果**
 
