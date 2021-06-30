@@ -18,7 +18,7 @@
 
 分别完成主界面、结果界面的绘制后，保存为pyTranslate.ui和results5.ui文件。
 
-![image-20210423100929681](C:\Users\20181\AppData\Roaming\Typora\typora-user-images\image-20210423100929681.png)
+![image](https://user-images.githubusercontent.com/56212670/123984822-8a937080-d9f7-11eb-923e-e0dc57dc48fd.png)
 
 **（2） 将.ui文件转化为.py文件。**
 
@@ -120,39 +120,3 @@ self.ui.textBrowser_4.setText(self.mainTranslate(seq[::-1][0:])) # 反向第一�
 self.ui.textBrowser_5.setText(self.mainTranslate(seq[::-1][1:])) # 反向第二个阅读框
 self.ui.textBrowser_6.setText(self.mainTranslate(seq[::-1][2:])) # 反向第三个阅读框
 ```
-
-## 3. 运行结果
-
-**（1） 在[Genbank](https://www.ncbi.nlm.nih.gov/nuccore/S89966.1?report=fasta)搜索非洲猪瘟病毒的DNA序列，并复制序列。**
-
-<img src="C:\Users\20181\AppData\Roaming\Typora\typora-user-images\image-20210423104321282.png" alt="image-20210423104321282" style="zoom:50%;" />
-
-**（2） 运行程序，在文本框粘贴刚刚复制的序列，点击Submit。**
-
-<img src="C:\Users\20181\AppData\Roaming\Typora\typora-user-images\image-20210423104540998.png" alt="image-20210423104540998" style="zoom:50%;" />
-
-**（3） 输出翻译结果。**
-
-<img src="C:\Users\20181\AppData\Roaming\Typora\typora-user-images\image-20210423104655304.png" alt="image-20210423104655304" style="zoom:50%;" />
-
-**（4） 对比[Translate](https://web.expasy.org/translate/)网站翻译结果。**
-
-在Translate网站输入以上序列，查看结果。
-
-![image-20210423105450723](C:\Users\20181\AppData\Roaming\Typora\typora-user-images\image-20210423105450723.png)
-
-对比两者翻译结果：完全一致。说明本程序功能正确。
-
-## 4. 反思
-
-### 优点
-
-* 本程序基本功能（将DNA翻译为蛋白质）已经正确实现。
-* 实现了界面。
-* 代码规范良好，有详细的注释，界面与逻辑代码分离，易于修改。
-
-### 待改进
-
-* 没有将可翻译的蛋白（起始密码子到终止密码子）可视化，阅读程序结果较困难。
-* 没有做防错代码，在用户输入某些不合规范的序列时，程序容易崩溃。
-* 可以增加更多的小功能点，比如保存翻译结果、读入序列文件、选择密码表等。
