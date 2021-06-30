@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pyTranslate</class>
+ <widget class="QMainWindow" name="pyTranslate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>30</y>
+      <width>321</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>pyTranslate</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btClear">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>300</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btSubmit">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>450</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Submit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblAuthor">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>540</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>8</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>@PeiwenJi Computational Biology</string>
+    </property>
+    <property name="color" stdset="0">
+     <color>
+      <red>141</red>
+      <green>141</green>
+      <blue>141</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblNote">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>180</y>
+      <width>671</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Please input a DNA sequence - numbers and blanks are ignored</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>226</y>
+      <width>481</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑 Light</family>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Please input a DNA sequence to be translated.</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btClear</sender>
+   <signal>clicked()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>675</x>
+     <y>316</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>310</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
